@@ -102,9 +102,17 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        &:hover {
+          p {
+            color: #ff6633;
+          }
+          i {
+            color: #ff6633;
+          }
+        }
         i {
           font-size: 20px;
+          font-weight: 700;
         }
       }
     }
@@ -114,6 +122,14 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        &:hover {
+          p {
+            color: #ff6633;
+          }
+          i {
+            color: #ff6633;
+          }
+        }
         i {
           font-size: 20px;
         }
@@ -125,6 +141,14 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        &:hover {
+          p {
+            color: #ff6633;
+          }
+          i {
+            color: #ff6633;
+          }
+        }
         i {
           font-size: 20px;
         }
@@ -135,6 +159,9 @@ header {
       a {
         margin-left: 10px;
       }
+      &:hover {
+        color: #ff6633;
+      }
       .modal {
         position: fixed;
         top: 0;
@@ -143,7 +170,7 @@ header {
         right: 0;
         background: rgba(252, 213, 186, 0.8);
         opacity: 0;
-        z-index: -1 !important;
+        // z-index: -1 !important;
         transition: 0.5s;
         display: none;
       }
@@ -249,7 +276,6 @@ header {
 
       .btn1 {
         display: flex;
-
         align-items: center;
         background: transparent;
         border: none;
@@ -260,8 +286,8 @@ header {
     }
 
     .input {
-        max-width: 360px;
-        width: 100%;
+      max-width: 360px;
+      width: 100%;
       .input1 {
         position: relative;
         display: flex;

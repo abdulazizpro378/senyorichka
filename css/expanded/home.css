@@ -93,13 +93,26 @@ header nav .like1 a {
   flex-direction: column;
   align-items: center;
 }
+header nav .like1 a:hover p {
+  color: #ff6633;
+}
+header nav .like1 a:hover i {
+  color: #ff6633;
+}
 header nav .like1 a i {
   font-size: 20px;
+  font-weight: 700;
 }
 header nav .like2 a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+header nav .like2 a:hover p {
+  color: #ff6633;
+}
+header nav .like2 a:hover i {
+  color: #ff6633;
 }
 header nav .like2 a i {
   font-size: 20px;
@@ -109,11 +122,20 @@ header nav .like3 a {
   flex-direction: column;
   align-items: center;
 }
+header nav .like3 a:hover p {
+  color: #ff6633;
+}
+header nav .like3 a:hover i {
+  color: #ff6633;
+}
 header nav .like3 a i {
   font-size: 20px;
 }
 header nav .like4 a {
   margin-left: 10px;
+}
+header nav .like4:hover {
+  color: #ff6633;
 }
 header nav .like4 .modal {
   position: fixed;
@@ -123,7 +145,6 @@ header nav .like4 .modal {
   right: 0;
   background: rgba(252, 213, 186, 0.8);
   opacity: 0;
-  z-index: -1 !important;
   transition: 0.5s;
   display: none;
 }
@@ -497,17 +518,9 @@ input:focus {
   line-height: 150%;
   color: #414141;
 }
-.cards .card-bottom .card-star span:nth-child(1) {
+.cards .card-bottom .card-star {
   color: #ff6633;
-  cursor: pointer;
-}
-.cards .card-bottom .card-star span:nth-child(2) {
-  color: #ff6633;
-  cursor: pointer;
-}
-.cards .card-bottom .card-star span {
-  color: grey;
-  cursor: pointer;
+  font-size: 28px;
 }
 .cards .card-bottom .card-btn button {
   border: 1px solid #70c05b;

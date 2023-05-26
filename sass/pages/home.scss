@@ -38,32 +38,6 @@
 
 // acsiya start
 
-// #about{
-//   background: #fbf8ec;
-//   padding-bottom: 30px;
-//   .about-top{
-//     padding-top: 76px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     h3{
-//       color: #414141;
-//       font-size: 36px;
-//       font-style: normal;
-//       font-weight: 700;
-//       line-height: 150%;
-//     }
-//     a {
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 16px;
-//       line-height: 150%;
-//       color: #606060;
-//     }
-//   }
-
-// }
-
 #aksiya {
   background-color: #fcf6e4;
   padding-bottom: 120px;
@@ -189,18 +163,8 @@
       color: #414141;
     }
     .card-star {
-      span:nth-child(1) {
-        color: #ff6633;
-        cursor: pointer;
-      }
-      span:nth-child(2) {
-        color: #ff6633;
-        cursor: pointer;
-      }
-      span {
-        color: grey;
-        cursor: pointer;
-      }
+      color:#ff6633;
+      font-size: 28px;
     }
     .card-btn button {
       border: 1px solid #70c05b;
@@ -290,6 +254,7 @@
     }
   }
 }
+
 .and1 {
   padding: 38px;
 }
@@ -389,8 +354,6 @@
   }
 }
 
-
-
 @media (max-width: 1250px) {
   .cards {
     display: grid;
@@ -437,7 +400,7 @@
 }
 
 @media (max-width: 800px) {
-  .status_row{
+  .status_row {
     grid-template-columns: 1fr 1fr !important;
   }
 }
@@ -454,7 +417,7 @@
     max-width: 330px;
   }
 
-  .status_row{
+  .status_row {
     grid-template-columns: 1fr !important;
   }
 }
@@ -486,7 +449,6 @@
     z-index: 1;
     i {
       margin-left: 8px;
-
       color: black !important;
     }
     .a1 {
