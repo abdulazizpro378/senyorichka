@@ -53,7 +53,7 @@
                 </div>
               </div>
             </div>
-            <a class="a1" href="#">Каталог</a>
+            <a class="a1" href="./katalog.html">Каталог</a>
           </div>
           <div class="input">
             <form action="#">
@@ -71,7 +71,7 @@
               </a>
             </div>
             <div class="like2">
-              <a href="#">
+              <a href="./vse-prodact.html">
                 <span><i class="uil uil-cube"></i></span>
                 <p>продукты</p>
               </a>
@@ -137,7 +137,7 @@
         <div class="container">
           <div class="name-aksiya">
             <h1>Акции</h1>
-            <a href="#">Все продукты <span>></span></a>
+            <a href="./vse-prodact.html">Все продукты <span>></span></a>
           </div>
   
           <div class="cards">
@@ -197,7 +197,9 @@
             <h1>Наши магазины</h1>
           </div>
         <div class="btn">
-          <button class="active" id="btn-1">п.Щельяюр</button>
+          <button class="active show" id="btn-1">п.Щельяюр
+            <div id="same"></div>
+          </button>
           <button id="btn-2">д.Вертеп</button>
           <button id="btn-3">с.Краснобор</button>
           <button id="btn-4">д.Диюр</button>
@@ -223,21 +225,7 @@
               <a href="#">Все статьи ></a>
             </div>
             <div class="status_row">
-<!--          
-              <div class="status_card">
-                <img src="./images/result-img25.png" alt="res">
-                <h3>Режим использования масок и перчаток на территории магазинов</h3>
-                <p>Подробная информация о режимах использования масок и перчаток на территории магазинов 
-                  "ЛЕНТА". Информация обновляется каждый будний день.</p>
-                  <button class="btn">Подробнее</button>
-              </div>
-              <div class="status_card">
-                <img src="./images/status-img26.png" alt="res">
-                <h3>Режим использования масок и перчаток на территории магазинов</h3>
-                <p>Подробная информация о режимах использования масок и перчаток на территории магазинов 
-                  "ЛЕНТА". Информация обновляется каждый будний день.</p>
-                  <button class="btn">Подробнее</button>
-              </div> -->
+
             </div>
             
         </div>
@@ -247,6 +235,7 @@
       </section>
   
 </main>
+<!-- start footer -->
 <footer>
   <div class="container">
     <div class="footer-row">
@@ -267,7 +256,33 @@
       <img src="./images/zzz.svg" alt="zz">
     </div>
   </div>
+
+
 </footer>
+
+<div class="nav-footer nav_foooter">
+  <div class="foo-btn">
+    <button onclick="toggle()"> <span class="material-symbols-outlined"> menu </span></button>
+  </div>
+  <div class="likes">
+    
+    <span class="material-symbols-outlined"> favorite </span>
+    <p class="likes-text">Избранное</p>
+  </div>
+  <div class="products">
+    <span class="material-symbols-outlined"> deployed_code </span>
+    <p class="products-text">продукты</p>
+  </div>
+  <div class="shop">
+    <span class="material-symbols-outlined"> shopping_cart </span>
+    <p class="shop-text">Корзина</p>
+  </div>
+  <div class="alex">
+    <img src="./images/alex.svg" alt="alex" />
+    <p class="alex-text">Алексей</p>
+    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+  </div>
+</div>
     <script src="./js/product.js"></script>
     <script src="./js/home.js"></script>
   </body>

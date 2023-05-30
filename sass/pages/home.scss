@@ -1,8 +1,6 @@
 @use "../main";
 
-.d-blok {
-  display: block !important;
-}
+
 // home section
 
 #home {
@@ -80,8 +78,18 @@
     background: #ffffff;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow: hidden;
+    &:hover {
+      cursor: pointer;
+      #span {
+        transform: translateX(0);
+      }
+    }
     img {
       width: 100%;
+    }
+    #span {
+      transform: translateX(50px);
     }
     .card-top {
       position: relative;
@@ -163,7 +171,7 @@
       color: #414141;
     }
     .card-star {
-      color:#ff6633;
+      color: #ff6633;
       font-size: 28px;
     }
     .card-btn button {
@@ -312,7 +320,11 @@
         width: 100%;
       }
       h3 {
-        padding: 10px;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding: 0 10px;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -369,20 +381,6 @@
 }
 
 @media (max-width: 1075px) {
-  .buttton {
-    display: none !important;
-  }
-  .like {
-    position: fixed !important;
-    display: flex;
-    justify-content: space-between;
-    bottom: 0;
-    left: -1px;
-    padding: 5px;
-    background-color: white;
-    width: 100%;
-  }
-
   .home-row {
     h1 {
       font-size: 36px !important;
@@ -390,11 +388,6 @@
   }
 
   .hero {
-    flex-direction: column;
-  }
-
-  .footer-row {
-    gap: 20px !important;
     flex-direction: column;
   }
 }
@@ -422,16 +415,6 @@
   }
 }
 
-@media (max-width: 590px) {
-  .right {
-    a {
-      margin-right: 10px;
-    }
-  }
-  .like4 {
-    display: none;
-  }
-}
 @media (max-width: 500px) {
   .home-row {
     flex-direction: column;
@@ -440,37 +423,5 @@
     }
   }
 
-  .buttton {
-    display: block !important;
-    position: fixed;
-    background: transparent !important;
-    bottom: 0px;
-    left: 0px;
-    z-index: 1;
-    i {
-      margin-left: 8px;
-      color: black !important;
-    }
-    .a1 {
-      display: block;
-      color: black !important;
-      font-size: 11px !important;
-    }
-  }
-
-  .right {
-    img {
-      margin-right: 10px;
-    }
-    a {
-      display: none;
-    }
-  }
-
-  .left {
-    display: flex !important;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+  
 }

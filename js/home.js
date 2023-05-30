@@ -1,14 +1,16 @@
-// var btnToggle = document.getElementById("toggle");
 const dropdown = document.querySelector(".dropdown");
 const open_btn = document.querySelector(".open-modal");
 const close_btn = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
 const modal_content = document.querySelector(".modal-content");
+
+
 let btn1 = document.getElementById("btn-1");
 let btn2 = document.getElementById("btn-2");
 let btn3 = document.getElementById("btn-3");
 let btn4 = document.getElementById("btn-4");
 let iframe = document.querySelector(".iframe-box");
+
 let card = document.querySelector(".cards");
 let catd_noviy = document.querySelector(".noviy");
 let magazin = document.querySelector(".magazin");
@@ -54,6 +56,7 @@ window.addEventListener("keydown", function (e) {
 // modal show end
 
 // map start
+
 btn2.addEventListener("click", function () {
   this.classList.add("active");
   iframe.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.9420216292137!2d71.78567611546045!3d40.38797757936857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83a471c6b55b%3A0x9927f2609db0d333!2sNajot%20Ta&#39;lim%20Farg&#39;ona!5e0!3m2!1sen!2s!4v1679488781708!5m2!1sen!2s"width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
@@ -90,13 +93,13 @@ btn4.addEventListener("click", function () {
 
 // aksiya start
 
-function getCard({ img, name, name_price, desc, rating }) {
+function getCard({ img, name, name_price, desc, rating, pr }) {
   return `
   <div class="card">
               <div class="card-top">
                 <img src="${img}" alt="img" />
-                <span class="sale">-50%</span>
-                <span class="material-symbols-outlined heart"> favorite </span>
+                <span class="sale">-${pr}%</span>
+                <span class="material-symbols-outlined heart" id ="span"> favorite </span>
               </div>
               <div class="card-bottom">
                 <div class="price-pay">
@@ -147,7 +150,7 @@ function getNoviy({ name, img, desc, rating }) {
               <div class="card-top">
                 <img src="${img}" alt="img" />
   
-                <span class="material-symbols-outlined heart"> favorite </span>
+                <span class="material-symbols-outlined heart " id ="span"> favorite </span>
               </div>
               <div class="card-bottom">
                 <div class="price-pay">
@@ -191,7 +194,7 @@ function getMagazin({ name, img, desc, rating }) {
                 <div class="card-top">
                   <img src="${img}" alt="img" />
     
-                  <span class="material-symbols-outlined heart"> favorite </span>
+                  <span class="material-symbols-outlined heart" id ="span"> favorite </span>
                 </div>
                 <div class="card-bottom">
                   <div class="price-pay">
@@ -254,7 +257,7 @@ function getStatus({ img, name_price, desc }) {
     <div class="status_card">
     <img src="${img}" alt="res">
     <h3>${name_price}</h3>
-    <p>${desc}</p>
+    <p class="line-clamp">${desc}</p>
       <button class="btn">Подробнее</button>
   </div>
     `;

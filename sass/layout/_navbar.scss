@@ -1,3 +1,7 @@
+.d-blok {
+  display: block !important;
+}
+
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
@@ -99,6 +103,7 @@ header {
 
     .like1 {
       a {
+        color: #414141;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -119,6 +124,7 @@ header {
 
     .like2 {
       a {
+        color: #414141;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -138,6 +144,7 @@ header {
 
     .like3 {
       a {
+        color: #414141;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -157,6 +164,7 @@ header {
 
     .like4 {
       a {
+        color: #414141;
         margin-left: 10px;
       }
       &:hover {
@@ -210,7 +218,7 @@ header {
           padding: 12px;
           margin-bottom: 32px;
           border: 1px solid #70c05b;
-
+          width: 320px;
           box-shadow: 4px 8px 16px rgba(112, 192, 91, 0.2);
           border-radius: 4px;
         }
@@ -219,7 +227,7 @@ header {
           border: 1px solid #fcd5ba;
           padding: 16px;
           text-align: center;
-          width: 260px;
+          width: 320px;
           color: #ff6633;
           background: #fcd5ba;
           border-radius: 4px;
@@ -233,7 +241,7 @@ header {
             background: #ffffff;
             border: 1px solid #70c05b;
             padding: 12px;
-            width: 120px;
+            width: 150px;
             border-radius: 4px;
             font-style: normal;
             font-weight: 400;
@@ -245,6 +253,8 @@ header {
               box-shadow: 8px 16px 32px rgba(255, 102, 51, 0.2);
               color: #70c05b;
             }
+
+         
           }
         }
       }
@@ -320,5 +330,27 @@ header {
         line-height: 150%;
       }
     }
+  }
+}
+
+
+@media (max-width: 1075px){
+  .buttton {
+    display: none !important;
+  }
+  .like {
+    display: none !important;
+    justify-content: space-between;
+    bottom: 0;
+    left: -1px;
+    padding: 5px;
+    background-color: white;
+    width: 100%;
+  }
+}
+
+@media (max-width: 590px){
+  .like4 {
+    display: none;
   }
 }
