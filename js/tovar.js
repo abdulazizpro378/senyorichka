@@ -115,7 +115,7 @@ function getasiaCard({ img, name, desc, name_price }) {
     <div class="card-footer">
       <h3>${name}</h3>
       <p>${desc}</p>
-        <img src="./images/logo1.svg" alt="logo1">
+       ${"★".repeat(rating) + "☆".repeat(5 - rating)}
         <button class="btn">
             В корзину
         </button>
