@@ -663,6 +663,7 @@ input:focus {
   color: #ffffff;
   margin-top: 19px;
   margin-bottom: 16px;
+  width: 376px;
   transition: 0.5s;
 }
 .dg-btn button:hover {
@@ -951,5 +952,8 @@ input:focus {
     flex-direction: column !important;
     justify-content: space-between;
     align-items: center;
+  }
+  .dg-btn button {
+    width: 250px !important;
   }
 }
