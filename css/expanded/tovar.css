@@ -663,7 +663,6 @@ input:focus {
   color: #ffffff;
   margin-top: 19px;
   margin-bottom: 16px;
-  width: 376px;
   transition: 0.5s;
 }
 .dg-btn button:hover {
@@ -764,8 +763,9 @@ input:focus {
 
 .tovar-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) !important;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
+  width: 100% !important;
 }
 .tovar-content .home-card {
   background: #ffffff;
@@ -897,4 +897,59 @@ input:focus {
   border-radius: 4px;
   color: #ffffff;
   border: 1px solid #ff6633;
+}
+
+@media (max-width: 1250px) {
+  .home-content {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .tovar-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    justify-content: center;
+  }
+  .asia-content {
+    grid-template-columns: repeat(2, 1fr) !important;
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .home-content {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-content: center;
+  }
+}
+@media (max-width: 625px) {
+  .tovar-content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .asia-content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .content-left {
+    flex-direction: column;
+  }
+  .content-left .indicator {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 480px) {
+  .link, .link-end {
+    flex-direction: column !important;
+  }
+  .link-content h1 {
+    font-size: 16px;
+  }
+  .indicator {
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
