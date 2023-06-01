@@ -1,6 +1,7 @@
 // ------
 
 const search_card_products = [
+  
   {
     id: 0,
     fullike: "images/yurak-bosh.png",
