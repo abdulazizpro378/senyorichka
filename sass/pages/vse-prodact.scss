@@ -1,5 +1,11 @@
 @use "../main";
 
+
+
+
+
+
+
 // home section
 
 #home {
@@ -41,24 +47,21 @@
     overflow: hidden;
     &:hover {
       cursor: pointer;
-      #span {
-        transform: translateX(0);
-      }
+      
     }
     img {
       width: 100% !important;
     }
     #span {
-      transform: translateX(50px);
+      width: 50px !important;
     }
     .card-top {
       position: relative;
-      .sale {
-        top: 120px;
-        left: 15px;
+      #span {
+        top: 4px;
+        right: 4px;
         position: absolute;
         padding: 4px 8px;
-        background: #ff6633;
         border-radius: 4px;
         font-family: "Rubik", sans-serif;
         font-style: normal;

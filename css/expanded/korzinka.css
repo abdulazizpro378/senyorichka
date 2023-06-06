@@ -560,204 +560,200 @@ input:focus {
   display: revert;
 }
 
-#home {
-  background-color: #fcf6e4;
-  padding: 44px 0 50px;
+body {
+  background: #fbf8ec;
 }
 
-.home-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 76px 0 40px;
+#corzinka {
+  padding-top: 90px;
 }
-.home-row h1 {
-  font-family: "Rubik", sans-serif;
+
+.corzinka-top a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  cursor: pointer;
+  color: #414141;
+  margin: 0 12px;
+}
+.corzinka-top span {
+  color: #414141;
+}
+.corzinka-top h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 48px;
   line-height: 150%;
+  max-width: 1200px;
+  padding-bottom: 24px;
   color: #414141;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+.corzinka-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
 }
-.cards .card {
-  width: 100%;
-  max-width: 272px;
-  height: 380px;
+
+.corzinka-cart {
+  display: flex;
+  gap: 20px;
+  max-width: 876px;
+  margin-bottom: 20px;
   background: #ffffff;
+  padding: 10px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.cards .card:hover {
-  cursor: pointer;
-}
-.cards .card img {
-  width: 100% !important;
-}
-.cards .card #span {
-  width: 50px !important;
-}
-.cards .card .card-top {
-  position: relative;
-}
-.cards .card .card-top #span {
-  top: 4px;
-  right: 4px;
-  position: absolute;
-  padding: 4px 8px;
   border-radius: 4px;
-  font-family: "Rubik", sans-serif;
+}
+.corzinka-cart .cart-header img {
+  max-width: 120px;
+}
+.corzinka-cart .cart-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.corzinka-cart .cart-body p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #ffffff;
+  padding-right: 50px;
 }
-.cards .card .card-top .heart {
-  padding: 6px 5px;
-  background: #f3f2f1;
-  opacity: 0.5;
-  border-radius: 4px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 28px;
+.corzinka-cart .cart-body span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #414141;
 }
-.cards .card-bottom {
-  padding: 10px 10px;
-}
-.cards .card-bottom .price-pay .price {
+.corzinka-cart .cart-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.cards .card-bottom .price-pay .price .price-2 {
-  padding-bottom: 10px;
+.corzinka-cart .cart-footer .btn {
+  padding: 8px;
+  border: none;
+  height: 40px;
+  background: #70c05b;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
 }
-.cards .card-bottom .price-pay .price .first-price {
-  font-family: "Rubik", sans-serif;
+.corzinka-cart .cart-footer p {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
   color: #414141;
+  margin-left: 25px;
 }
-.cards .card-bottom .price-pay .price .second-price {
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #606060;
-}
-.cards .card-bottom .price-pay .pay {
+
+.right-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
-.cards .card-bottom .price-pay .pay .simple,
-.cards .card-bottom .price-pay .pay .with-card {
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #bfbfbf;
-}
-.cards .card-bottom .card-info {
-  padding: 8px 0;
-  font-family: "Rubik", sans-serif;
+.right-top span {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #414141;
 }
-.cards .card-bottom .card-info p {
-  display: -webkit-box !important;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+
+.center {
+  display: flex;
+  flex-direction: column;
 }
-.cards .card-bottom .card-star {
-  color: #ff6633;
-  font-size: 28px;
-}
-.cards .card-bottom .card-btn button {
-  border: 1px solid #70c05b;
-  background-color: transparent;
-  width: 100%;
-  padding: 10px 10px;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-.cards .card-bottom .card-btn button:hover {
-  transition: 0.8s;
-  background-color: #ff6633;
-  border: 1px solid #ff6633;
-  color: #fff;
-}
-.cards .card-bottom .card-btn button:hover > a {
-  color: #fff;
-}
-.cards .card-bottom .card-btn button a {
-  font-family: "Rubik", sans-serif;
+.center p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #70c05b;
+  color: #8f8f8f;
 }
 
-#paganition {
-  background: #fbf8ec;
-  padding-bottom: 30px;
+.middle {
+  height: 2px;
+  width: 100%;
+  background: #f3f2f1;
+  margin: 20px 0;
 }
-#paganition ul {
+
+.right-middle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 170px;
+}
+.right-middle .cikidka {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ff6633;
+}
+.right-middle p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8f8f8f;
+}
+
+.right-footer {
   display: flex;
-  max-width: 500px;
-  margin: 0 auto;
+  align-items: center;
   justify-content: space-between;
 }
-#paganition .page-item {
+.right-footer p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  cursor: pointer;
-  color: #606060;
+  color: #8f8f8f;
 }
-#paganition .active {
+.right-footer span {
   font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 150%;
-  color: #ff6633 !important;
+  color: #414141;
 }
 
-@media (max-width: 1250px) {
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 35px;
-  }
+.rigth-btn {
+  display: flex;
+  flex-direction: column;
 }
-@media (max-width: 1100px) {
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.rigth-btn p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  background: #d80000;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px 0;
 }
-@media (max-width: 600px) {
-  .cards {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center !important;
-  }
+.rigth-btn .btn {
+  background: #fcd5ba;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  padding: 18px;
+  color: #ff6633;
+  border: none;
+  cursor: pointer;
+  flex-grow: 1;
+}
+.rigth-btn .btn:hover {
+  transform: scale(1.1);
 }

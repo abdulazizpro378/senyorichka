@@ -12,6 +12,34 @@ header {
   position: fixed;
   padding: 16px 0;
 }
+header .like1 {
+  position: relative;
+}
+header .like1 .position-absolutebadge {
+  position: absolute;
+  top: -5px;
+  right: 16px;
+  padding: 2px;
+  font-size: 10px;
+  position: absolute;
+  background-color: #f63;
+  border-radius: 20px;
+  color: #fff;
+}
+header .like3 {
+  position: relative;
+}
+header .like3 .position-absolutebadge {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  padding: 2px;
+  font-size: 10px;
+  position: absolute;
+  background-color: #f63;
+  border-radius: 20px;
+  color: #fff;
+}
 header nav {
   display: flex;
   justify-content: space-between;

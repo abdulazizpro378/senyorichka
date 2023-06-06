@@ -2,6 +2,9 @@
   display: block !important;
 }
 
+
+
+
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,6 +13,39 @@ header {
   top: 0;
   position: fixed;
   padding: 16px 0;
+
+
+  .like1{
+    position: relative;
+    .position-absolutebadge{
+      position: absolute;
+      top: -5px;
+      right: 16px;
+      padding: 2px;
+      font-size: 10px;
+      position: absolute;
+      background-color: #f63;
+      border-radius: 20px;
+      color: #fff;
+    }
+  }
+  
+  .like3{
+    position: relative;
+    .position-absolutebadge{
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      padding: 2px;
+      font-size: 10px;
+      position: absolute;
+      background-color: #f63;
+      border-radius: 20px;
+      color: #fff;
+    }
+  }
+  
+
   nav {
     display: flex;
     justify-content: space-between;
