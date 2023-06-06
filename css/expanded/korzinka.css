@@ -751,9 +751,30 @@ body {
   padding: 18px;
   color: #ff6633;
   border: none;
-  cursor: pointer;
+  cursor: pointer !important;
   flex-grow: 1;
 }
 .rigth-btn .btn:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1100px) {
+  .corzinka-row {
+    flex-direction: column;
+  }
+  .corzinka-right {
+    width: 550px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .corzinka-cart {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .corzinka-right {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
